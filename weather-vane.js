@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // weather-vane.js ////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-// 
+
 // Criteria ///////////////////////////////////////////////////////////////////
 // * Event Listeners - The weather-display is clickable; toggles F/C scale.
 // * Classes - Weather class represents a single-hour weather report.
@@ -115,7 +115,7 @@ const getWeather = async (forecastURL) => {
 
 // weatherUpdateInterval //////////////////////////////////////////////////////
 // Sets the regularity with which the given Weather is updated.
-const weatherUpdateInterval = (weather) => {
+const weatherUpdateInterval = () => {
     setInterval(async () => {
         console.log("Weather updating.");
         await weather.updateWeather();
